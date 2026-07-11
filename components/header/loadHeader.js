@@ -1,6 +1,6 @@
 async function loadHeader(){
     const placeholderHeader = document.getElementById('header');
-    const response = await fetch('/components/Header.html');
+    const response = await fetch('/components/header/Header.html');
     const html = await response.text();
     placeholderHeader.innerHTML = html;
      const menu = document.getElementById('navbar');
