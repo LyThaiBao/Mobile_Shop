@@ -8,14 +8,76 @@
     <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <!-- root css -->
      <link rel="stylesheet" href="../public/css/root.css">
+     <!-- home css -->
+      <link rel="stylesheet" href="./src/TrangChu/trangchu.css">
      <!-- icon -->
       <link rel="stylesheet" href="../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 </head>
 <body class="bg-white">
-   <div class="wrapper ">
-     <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2"></header>
-     
+   <div class="wrapper">
+     <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2 py-2"></header>
+    <main>
+      <!-- Banner -->
+      <div id="banner" class="py-5 px-2 borde border d-md-flex gap-5 justify-content-center justify-content-lg-between align-items-stretch">
+        <div class="banner_left position-relative">
+          <h6 class="text-center text-primary-app ex-bold">
+          <span>CHÍNH HÃNG</span> 
+          <span><i class="bi bi-dot"></i></span> 
+          <span>BẢO HÀNH 12 THÁNG</span> 
+          </h6>
+          <h1 class="text-center">Điện thoại chính hãng, giá tốt</h1>
+          <h6 class="text-center">Trả góp 0%, giao hàng toàn quốc</h6>
+          <button class="btn bg-primary-app ms-40 mt-4 px-4 py-3">Mua ngay</button>
+        </div>
+        <div class="banner-right  d-none  me-5 flex-grow-1 h-100 bottom-0 d-lg-flex justify-content-end ">
+          <div class="contain_img border w-25   me-5 h-500 rounded-4 ">
+            fsfs
+          </div>
+        </div>
+      </div>
 
+      <!-- Category -->
+    <div id="category" class="py-2 my-2 d-flex px-2 gap-2">
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-iphone">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-apple fs-5"></i>
+    </div>
+    <span class="small fw-medium">iPhone</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-android">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-android2 fs-5"></i>
+    </div>
+    <span class="small fw-medium">Android</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-accessory">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-brush-fill fs-5"></i>
+    </div>
+    <span class="small fw-medium">Phụ kiện</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-promo">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-ticket-perforated-fill fs-5"></i>
+    </div>
+    <span class="small fw-medium">Khuyến mãi</span>
+  </div>
+    </div>
+
+    <!-- Product -->
+     <div id="product" class="px-2 py-4">
+      <div class="product_intro d-flex align-items-center justify-content-between">
+        <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
+        <span>Xem tất cả</span>
+      </div>
+      <div id="container_products">
+
+      </div>
+     </div>
+    </main>
      <div id="bottom-placeholder" class=""></div>
    </div>
 </body>
