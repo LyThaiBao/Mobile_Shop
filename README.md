@@ -9,7 +9,7 @@
 ## Lib lưu thư viện bootstrap
     ```
     ```
-***** Load Header vào trang ***
+### Load Header vào trang
     ```+B1: Link đến nơi chứa thư viện bootstrap, css root (customse), icon bootstrap, copy link bên dưới dán vào thẻ head của trang cần sử dụng   
         <!-- bootstrap -->
         <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
