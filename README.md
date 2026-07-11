@@ -9,7 +9,7 @@
 ## Lib lưu thư viện bootstrap
     ```
     ```
-### Load Header vào trang
+### Load Header và Mobile Bottom vào trang
     ```+B1: Link đến nơi chứa thư viện bootstrap, css root (customse), icon bootstrap, copy link bên dưới dán vào thẻ head của trang cần sử dụng   
         <!-- bootstrap -->
         <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -22,7 +22,7 @@
         <div class="wrapper ">
         <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2"></header>
         -------------------------
-            Anh code ở đây nha  
+            Anh em code ở đây nha  
         -------------------------
         <div id="bottom-placeholder" class=""></div>
         </div>
