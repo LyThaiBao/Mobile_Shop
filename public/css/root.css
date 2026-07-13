@@ -52,8 +52,20 @@ li{
     list-style: none;
 }
 
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+#main{
+    margin-top: 60px;
+}
 
-
+#bottom-placeholder{
+    margin-top: 60px;
+}
 /* Tranfrom */
 .translate-full-x { 
     transform: translateX(-100vw);
@@ -196,6 +208,9 @@ li{
     transform: translateX(0) !important;
   }
 
+  .w-md-100{
+    width: 100% !important;
+  }
 
  
   /* -----Wrapper */
