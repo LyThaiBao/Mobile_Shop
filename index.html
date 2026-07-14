@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="./src/TrangChu/trangchu.css">
      <!-- icon -->
       <link rel="stylesheet" href="../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+      <!-- json -->
+       <script src="./lib/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-white">
    <div class="wrapper">
@@ -71,12 +73,85 @@
      <div id="product" class="px-3 py-4">
       <div class="product_intro d-flex align-items-center justify-content-between mb-3">
         <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
-        <span class="">Xem tất cả</span>
+        <span class="">Xem tất cả <i class="bi bi-arrow-right"></i></span>
       </div>
       <div id="container_products" class="px-3">
 
       </div>
      </div>
+
+     <!-- About -->
+      <div id="about" class="px-3 d-flex flex-column flex-lg-row gap-15 py-3 bold">
+        <!-- <div class="d-none d-lg-block p-3">Vì sao chọn chúng tôi</div> -->
+        <div class="row flex-grow-1 justify-content-end g-4 ">
+          <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-shield-check"></i>
+              Hàng chính hãng
+            </section>
+          </div>
+          <div class=" col-6 col-lg-3">
+            <section class="text-center border-2 border p-3 rounded-3">
+              <i class="bi bi-truck"></i>
+              Giao toàn quốc
+            </section>
+          </div>
+       <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-arrow-clockwise"></i>
+              Đổi trả 7 ngày
+            </section>
+          </div>
+        <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-info"></i>
+              Hỗ trợ 24/7
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup -->
+       <div id="signup" class="px-3 mt-5 d-flex justify-content-between flex-column gap-2 flex-lg-row">
+          <div class="text-center">
+            <span>Đăng ký nhận ưu đãi</span>
+            <p>Nhận mã giảm giá sản phẩm mới mỗi tuần.</p>
+          </div>
+          
+            <div class="d-flex flex-column flex-lg-row align-items-start gap-2">
+              <div class="d-flex flex-column flex-grow-1 w-100">
+                <input 
+                  type="email" 
+                  name="box_email" 
+                  id="box_email" 
+                  class="form-control border-success border-2" 
+                  required 
+                  placeholder="Email của bạn"
+                >
+                <small id="email_error" class="text-danger mt-1"></small>
+              </div>
+
+              <button type="button" class="btn btn-primary text-nowrap" id="trigger">
+                Đăng ký
+              </button>
+            </div>
+       </div>
+       <!-- Modal -->
+        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Tài khoản của bạn đang được xét duyệt nhận ưu đãi !
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+  </div>
+</div>
     </main>
      <div id="bottom-placeholder" class=""></div>
    </div>

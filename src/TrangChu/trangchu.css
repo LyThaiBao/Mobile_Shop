@@ -72,8 +72,18 @@
   border: none;
   border-radius: 15px;
   outline: none;
+  background: #43cb9e;
 }
 
 .containDesc{
   text-align: center;
+}
+
+#about{
+  background: var(--gradient-primary);
+}
+
+#box_email{
+  border-radius: 5px;
+  outline: none;
 }
