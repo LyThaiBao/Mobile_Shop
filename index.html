@@ -29,7 +29,7 @@
           </h6>
           <h1 class="text-center">Điện thoại chính hãng, giá tốt</h1>
           <h6 class="text-center">Trả góp 0%, giao hàng toàn quốc</h6>
-          <button class="btn bg-primary-app ms-40 mt-4 px-4 py-3">Mua ngay</button>
+          <button class="btn bg-primary-app ms-40 mt-4 px-4 py-3"  tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}" >Mua ngay</button>
         </div>
         <div class="banner-right  d-none  me-5 flex-grow-1 h-100 bottom-0 d-lg-flex justify-content-end ">
           <div class="contain_img border w-25   me-5 h-500 rounded-4 ">
@@ -73,11 +73,23 @@
      <div id="product" class="px-3 py-4">
       <div class="product_intro d-flex align-items-center justify-content-between mb-3">
         <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
-        <span class="">Xem tất cả <i class="bi bi-arrow-right"></i></span>
+        <span tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}">Xem tất cả <i class="bi bi-arrow-right"></i></span>
       </div>
       <div id="container_products" class="px-3">
 
       </div>
+      <!-- Toast -->
+       <div class="toast-container position-fixed top-0 end-0 p-3 ">
+  <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div  id="toastHeader">
+      <strong class="me-auto" id="from"></strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body" id="toastBody">
+     
+    </div>
+  </div>
+</div>
      </div>
 
      <!-- About -->

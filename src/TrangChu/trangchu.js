@@ -1,5 +1,9 @@
 import {products} from "../../data/products/products.js"
 import {formatVietnameseMoney} from "../../utils/convertMoney.js"
+import {checkLogin} from "../../utils/checkLogin.js"
+
+
+
 function renderHighLightProduct(){
     const containProduct = document.getElementById('container_products');
     const hlProduct = products.slice(7,11);
@@ -40,6 +44,9 @@ function renderHighLightProduct(){
     const buyBtn = document.createElement('button');
     buyBtn.classList.add('buy_btn');
     buyBtn.innerText = '+ Thêm giỏ';
+    buyBtn.addEventListener('click',()=>{
+       addToCart(item)
+    })
 
     // ----- Gộp các thành phần lại ----
     containDesc.append(title, price, buyBtn);
@@ -71,10 +78,33 @@ function  checkEmail(){
         error.innerText = "Email không hợp lệ!"
         return;
        }
+   
            modal.show();
            boxEmail.value = error.innerText = ""; 
     })
 
+}
+
+function addToCart(product){
+    const toast = new bootstrap.Toast(document.getElementById('cartToast'));
+    const comFrom = document.getElementById("from");
+    const toastHeader = document.getElementById("toastHeader");
+    const toastBody = document.getElementById("toastBody");
+        if(!checkLogin()){
+            toastHeader.setAttribute('class','toast-header bg-danger')
+            comFrom.innerText = "Thông Báo"
+            toastBody.innerText = "Vui lòng đăng nhập";
+        }
+        else{
+            toastHeader.setAttribute('class','toast-header bg-info')
+            comFrom.innerText = "Giỏ Hàng"
+            toastBody.innerText = "Đã thêm sản phẩm vào giỏ hàng!";
+            const currentCart = JSON.parse(localStorage.getItem("cart"))||[];
+            const newCart = [...currentCart,product];
+            const toJSON = JSON.stringify(newCart);
+            localStorage.setItem("cart",toJSON)
+        }
+        toast.show();
 }
 
 checkEmail()
