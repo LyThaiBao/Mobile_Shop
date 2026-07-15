@@ -4,16 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu</title>
+     <!-- bootstrap -->
     <link rel="stylesheet" href="../../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- root css -->
     <link rel="stylesheet" href="../../public/css/root.css">
+     <!-- home css -->
+    <link rel="stylesheet" href="./gioithieu.css">
+    <!-- icon -->
     <link rel="stylesheet" href="../../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 </head>
 <body>
 
    <div class="wrapper ">
         <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2"></header>
-        <h1> Trang Giới Thiệu</h1>
 
+        <!-- BẮT ĐẦU PHẦN MAIN -->
+         <main class="container">
+            <!-- Đường dẫn Breadcrumb -->
+            <nav class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html" class="text-secondary">Trang chủ</a></li>
+                    <li class="breadcrumb-item text-light">Giới thiệu</li>
+                </ol>
+            </nav>
+
+            <!-- Khối Banner giới thiệu chính -->
+            <section class="intro-banner text-center p-5 mb-5 rounded-4">
+                <span class="sub-title text-uppercase fw-bold text-success-app">TỪ 2016 - HƠN 128.000 KHÁCH HÀNG TIN DÙNG</span>
+                <h1 class="main-title my-3 text-light fw-bold">Chúng tôi mang điện thoại chính hãng<br>đến gần hơn với mọi người</h1>
+                <p class="mx-auto text-secondary" style="max-width: 600px;">
+                    Bắt đầu từ một cửa hàng nhỏ, đến nay chúng tôi đã phục vụ khách hàng tại 40+ tỉnh thành, với cam kết hàng chính hãng, giá minh bạch và hậu mãi tận tâm.
+                </p>
+            </section>
+
+            <!-- Khối Thống kê số liệu (4 cột bằng grid Bootstrap) -->
+            <section class="row g-3 text-center mb-5">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-3">
+                        <h2 class="stat-number fw-bold">2016</h2>
+                        <p class="text-secondary m-0">Năm thành lập</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-3">
+                        <h2 class="stat-number fw-bold">128k+</h2>
+                        <p class="text-secondary m-0">Khách hàng</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-3">
+                        <h2 class="stat-number fw-bold">40+</h2>
+                        <p class="text-secondary m-0">Cửa hàng toàn quốc</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-3">
+                        <h2 class="stat-number fw-bold">4.8/5</h2>
+                        <p class="text-secondary m-0">Đánh giá trung bình</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Khối Giá trị cốt lõi -->
+            <section class="mb-5">
+                <h3 class="text-light mb-4 fw-bold">Giá Trị Cốt Lõi</h3>
+                <div class="row g-4">
+                    <!-- Thẻ 1: Chính hãng 100% -->
+                    <div class="col-12 col-md-4">
+                        <div class="value-card p-4 rounded-3">
+                            <div class="value-icon mb-3">
+                                <i class="bi bi-shield-check fs-3"></i>
+                            </div>
+                            <h4 class="text-light fw-bold fs-5">Chính hãng 100%</h4>
+                            <p class="text-secondary m-0 mt-2">Tất cả sản phẩm đều có tem chính hãng, bảo hành đầy đủ từ nhà sản xuất.</p>
+                        </div>
+                    </div>
+                    <!-- Thẻ 2: Minh bạch giá -->
+                    <div class="col-12 col-md-4">
+                        <div class="value-card p-4 rounded-3">
+                            <div class="value-icon mb-3">
+                                <i class="bi bi-arrow-repeat fs-3"></i>
+                            </div>
+                            <h4 class="text-light fw-bold fs-5">Minh bạch giá</h4>
+                            <p class="text-secondary m-0 mt-2">Giá niêm yết rõ ràng, không phát sinh chi phí ẩn khi thanh toán.</p>
+                        </div>
+                    </div>
+                    <!-- Thẻ 3: Hậu mãi tận tâm -->
+                    <div class="col-12 col-md-4">
+                        <div class="value-card p-4 rounded-3">
+                            <div class="value-icon mb-3">
+                                <i class="bi bi-headset fs-3"></i>
+                            </div>
+                            <h4 class="text-light fw-bold fs-5">Hậu mãi tận tâm</h4>
+                            <p class="text-secondary m-0 mt-2">Đội ngũ hỗ trợ 24/7, sẵn sàng đồng hành cùng khách hàng sau khi mua.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Khối Liên hệ ngay (Dùng Bootstrap Flexbox) -->
+            <section class="cta-section d-flex justify-content-between align-items-center p-4 rounded-3 mb-5">
+                <div>
+                    <h4 class="text-light fw-bold m-0 fs-5">Bạn cần tư vấn thêm?</h4>
+                    <p class="text-secondary m-0 small">Đội ngũ của chúng tôi luôn sẵn sàng lắng nghe.</p>
+                </div>
+                <a href="../Lienhe/lienhe.html" class="btn btn-cta px-4 py-2 fw-bold">Liên hệ ngay</a>
+            </section>
+        </main>
+<!-- KẾT THÚC PHẦN MAIN -->
          <div id="bottom-placeholder" class=""></div>
     </div>
 
