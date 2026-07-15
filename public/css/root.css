@@ -4,6 +4,8 @@
   --gradient-primary: linear-gradient(135deg, #25eb99 0%, #8aa7e0 100%);
   --gradient-dark: linear-gradient(135deg, #1E3A8A 0%, #312E81 100%);
   --gradient-glow: linear-gradient(135deg, #3B82F6 0%, #6366F1 50%, #8B5CF6 100%);
+  --text-primary:#2FE3A6;
+
 }
 
 /* Background Color */
@@ -51,7 +53,20 @@ li{
     list-style: none;
 }
 
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+#main{
+    margin-top: 60px;
+}
 
+#bottom-placeholder{
+    margin-top: 100px;
+}
 /* Tranfrom */
 .translate-full-x { 
     transform: translateX(-100vw);
@@ -104,6 +119,9 @@ li{
   }
 
 /* ---Text Color--- */
+.text-primary-app{
+    color: var(--text-primary);
+}
 .text-gray{
     color: #39373c;
 }
@@ -117,13 +135,65 @@ li{
 .bold{
     font-weight: 500;
 }
+.ex-bold{
+    font-weight: 700;
+}
 
+/* ---Position---- */
+.top-80{
+    top: 80%;
+}
+
+
+/* Padding */
+.py-6{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+/* Margin */
+.ms-40{
+    margin-left: 40%;
+}
+
+
+/* Sizing */
+.h-500{
+    height: 200px;
+}
+
+/*  */
+ /* bg-color */
+  .bg-md-transparent{
+    background-color: unset !important;
+  }
+
+  .bg-gray{
+    background-color: rgba(118, 116, 116, 0.83) !important;
+  }
+
+  .bg-green{
+    background-color: rgb(109, 219, 164) !important;
+  }
+
+
+  /*Flex  */
+  .gap-15{
+    gap: 60px;
+  }
 /* -------Responsive------------- */
 
 @media (min-width:650px){
     .fs-mid{
     font-size: 1.0rem;
-}
+    }
+
+    .flex-mid-col{
+        flex-direction: column;
+    }
+    .d-mid-none{
+        display: none !important;
+    }
+
 }
 
 
@@ -145,12 +215,11 @@ li{
     transform: translateX(0) !important;
   }
 
-
-  /* bg-color */
-  .bg-md-transparent{
-    background-color: unset !important;
+  .w-md-100{
+    width: 100% !important;
   }
 
+ 
   /* -----Wrapper */
   .wrapper{
     /* padding-left: 20px;

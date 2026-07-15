@@ -8,18 +8,168 @@
     <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <!-- root css -->
      <link rel="stylesheet" href="../public/css/root.css">
+     <!-- home css -->
+      <link rel="stylesheet" href="./src/TrangChu/trangchu.css">
      <!-- icon -->
       <link rel="stylesheet" href="../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+      <!-- json -->
+       <script src="./lib/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-white">
-   <div class="wrapper ">
-     <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2"></header>
-     
+   <div class="wrapper">
+     <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2 py-2"></header>
+    <main id="main" class="">
+      <!-- Banner -->
+      <div id="banner" class="py-5 px-2 borde border d-md-flex gap-5 justify-content-center justify-content-lg-between align-items-stretch">
+        <div class="banner_left position-relative">
+          <h6 class="text-center text-primary-app ex-bold">
+          <span>CHÍNH HÃNG</span> 
+          <span><i class="bi bi-dot"></i></span> 
+          <span>BẢO HÀNH 12 THÁNG</span> 
+          </h6>
+          <h1 class="text-center">Điện thoại chính hãng, giá tốt</h1>
+          <h6 class="text-center">Trả góp 0%, giao hàng toàn quốc</h6>
+          <button class="btn bg-primary-app ms-40 mt-4 px-4 py-3"  tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}" >Mua ngay</button>
+        </div>
+        <div class="banner-right  d-none  me-5 flex-grow-1 h-100 bottom-0 d-lg-flex justify-content-end ">
+          <div class="contain_img border w-25   me-5 h-500 rounded-4 ">
+            fsfs
+          </div>
+        </div>
+      </div>
 
+      <!-- Category -->
+    <div id="category" class="py-2 my-2 d-flex px-2 gap-2">
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-iphone">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-apple fs-5"></i>
+    </div>
+    <span class="small fw-medium">iPhone</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-android">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-android2 fs-5"></i>
+    </div>
+    <span class="small fw-medium">Android</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-accessory">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-brush-fill fs-5"></i>
+    </div>
+    <span class="small fw-medium">Phụ kiện</span>
+  </div>
+
+  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-promo">
+    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+      <i class="bi bi-ticket-perforated-fill fs-5"></i>
+    </div>
+    <span class="small fw-medium">Khuyến mãi</span>
+  </div>
+    </div>
+
+    <!-- Product -->
+     <div id="product" class="px-3 py-4">
+      <div class="product_intro d-flex align-items-center justify-content-between mb-3">
+        <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
+        <span tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}">Xem tất cả <i class="bi bi-arrow-right"></i></span>
+      </div>
+      <div id="container_products" class="px-3">
+
+      </div>
+      <!-- Toast -->
+       <div class="toast-container position-fixed top-0 end-0 p-3 ">
+  <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div  id="toastHeader">
+      <strong class="me-auto" id="from"></strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body" id="toastBody">
+     
+    </div>
+  </div>
+</div>
+     </div>
+
+     <!-- About -->
+      <div id="about" class="px-3 d-flex flex-column flex-lg-row gap-15 py-3 bold">
+        <!-- <div class="d-none d-lg-block p-3">Vì sao chọn chúng tôi</div> -->
+        <div class="row flex-grow-1 justify-content-end g-4 ">
+          <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-shield-check"></i>
+              Hàng chính hãng
+            </section>
+          </div>
+          <div class=" col-6 col-lg-3">
+            <section class="text-center border-2 border p-3 rounded-3">
+              <i class="bi bi-truck"></i>
+              Giao toàn quốc
+            </section>
+          </div>
+       <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-arrow-clockwise"></i>
+              Đổi trả 7 ngày
+            </section>
+          </div>
+        <div class=" col-6 col-lg-3">
+            <section class="text-center border border-2 p-3 rounded-3">
+              <i class="bi bi-info"></i>
+              Hỗ trợ 24/7
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup -->
+       <div id="signup" class="px-3 mt-5 d-flex justify-content-between flex-column gap-2 flex-lg-row">
+          <div class="text-center">
+            <span>Đăng ký nhận ưu đãi</span>
+            <p>Nhận mã giảm giá sản phẩm mới mỗi tuần.</p>
+          </div>
+          
+            <div class="d-flex flex-column flex-lg-row align-items-start gap-2">
+              <div class="d-flex flex-column flex-grow-1 w-100">
+                <input 
+                  type="email" 
+                  name="box_email" 
+                  id="box_email" 
+                  class="form-control border-success border-2" 
+                  required 
+                  placeholder="Email của bạn"
+                >
+                <small id="email_error" class="text-danger mt-1"></small>
+              </div>
+
+              <button type="button" class="btn btn-primary text-nowrap" id="trigger">
+                Đăng ký
+              </button>
+            </div>
+       </div>
+       <!-- Modal -->
+        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Tài khoản của bạn đang được xét duyệt nhận ưu đãi !
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+  </div>
+</div>
+    </main>
      <div id="bottom-placeholder" class=""></div>
    </div>
 </body>
 <!-- Load header và mobile nav vao -->
-<script src="./components/header/loadHeader.js"  type="module"></script>
+<script src="./components/header/loadHeader.js" type="module"></script>
 <script src="./components/bottom_mobile/loadBottomMobile.js"  type="module"></script>
+<script src="./src/TrangChu/trangchu.js" type="module"></script>
 </html>
