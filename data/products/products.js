@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 1,
     name: "iPhone 17 Pro 256GB | Chính hãng",
@@ -9,9 +9,9 @@ const products = [
       { storage: "1TB",   oldPrice: 47990000, newPrice: 45990000 }
     ],
     colors: [
-      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: [] },
-      { name: "Titan Cam", hex: "#c96a3e", imgs: [] },
-      { name: "Titan Bạc", hex: "#d9d9d9", imgs: [] }
+      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: ["../../public/imgs/products/sanpham1/i_1.webp"] },
+      { name: "Titan Cam", hex: "#c96a3e", imgs: ["../../public/imgs/products/sanpham1/i_2.webp"] },
+      { name: "Titan Bạc", hex: "#d9d9d9", imgs: ["../../public/imgs/products/sanpham1/i_3.webp"] }
     ]
   },
   {
@@ -24,9 +24,9 @@ const products = [
       { storage: "16GB/1TB",   oldPrice: 51990000, newPrice: 44990000 }
     ],
     colors: [
-      { name: "Đen Titan", hex: "#1c1c1e", imgs: [] },
-      { name: "Bạc Titan", hex: "#cfd2d6", imgs: [] },
-      { name: "Xanh Titan", hex: "#3d4f5c", imgs: [] }
+      { name: "Đen Titan", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham2/i_1.jpg"] },
+      { name: "Bạc Titan", hex: "#cfd2d6", imgs: ["../../public/imgs/products/sanpham2/i_2.jpg"] },
+      { name: "Xanh Titan", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham2/i_3.jpg"] }
     ]
   },
   {
@@ -40,9 +40,9 @@ const products = [
       { storage: "2TB",   oldPrice: 63990000, newPrice: 60990000 }
     ],
     colors: [
-      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: [] },
-      { name: "Titan Cam", hex: "#c96a3e", imgs: [] },
-      { name: "Titan Bạc", hex: "#d9d9d9", imgs: [] }
+      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: ["../../public/imgs/products/sanpham3/i_1.webp"] },
+      { name: "Titan Cam", hex: "#c96a3e", imgs: ["../../public/imgs/products/sanpham3/i_2.webp"] },
+      { name: "Titan Bạc", hex: "#d9d9d9", imgs: ["../../public/imgs/products/sanpham3/i_3.webp"] }
     ]
   },
   {
@@ -53,9 +53,9 @@ const products = [
       { storage: "8GB/128GB", oldPrice: 6390000, newPrice: 6090000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh Bạc Hà", hex: "#a8c9bd", imgs: [] },
-      { name: "Xanh Dương", hex: "#4a6fa5", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham4/i_1.webp"] },
+      { name: "Xanh Bạc Hà", hex: "#a8c9bd", imgs: ["../../public/imgs/products/sanpham4/i_2.webp"] },
+      { name: "Xanh Dương", hex: "#4a6fa5", imgs: ["../../public/imgs/products/sanpham4/i_3.webp"] }
     ]
   },
   {
@@ -66,8 +66,8 @@ const products = [
       { storage: "12GB/256GB", oldPrice: 24990000, newPrice: 23990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Trắng", hex: "#f2f2f2", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham7/i_1.webp"] },
+      { name: "Trắng", hex: "#f2f2f2", imgs: ["../../public/imgs/products/sanpham7/i_2.jpg"] }
     ]
   },
   {
@@ -78,8 +78,8 @@ const products = [
       { storage: "16GB/512GB", oldPrice: 64990000, newPrice: 64990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Kem", hex: "#e8dfc9", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham8/i_1.jpg"] },
+      { name: "Kem", hex: "#e8dfc9", imgs: ["../../public/imgs/products/sanpham8/i_2.webp"] }
     ]
   },
   {
@@ -90,8 +90,8 @@ const products = [
       { storage: "8GB/128GB", oldPrice: 7490000, newPrice: 6990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Bạc", hex: "#cfd2d6", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham9/i_1.webp"] },
+      { name: "Bạc", hex: "#cfd2d6", imgs: ["../../public/imgs/products/sanpham9/i_2.webp"] }
     ]
   },
   {
@@ -102,9 +102,9 @@ const products = [
       { storage: "8GB/128GB", oldPrice: 12490000, newPrice: 11990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh", hex: "#3d4f5c", imgs: [] },
-      { name: "Tím", hex: "#a89bc9", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham10/i_1.webp"] },
+      { name: "Xanh", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham10/i_2.webp"] },
+      { name: "Tím", hex: "#a89bc9", imgs: ["../../public/imgs/products/sanpham10/i_3.webp"] }
     ]
   },
   {
@@ -115,8 +115,8 @@ const products = [
       { storage: "12GB/512GB", oldPrice: 17670000, newPrice: 12990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh Titan", hex: "#3d4f5c", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham11/i_1.webp"] },
+      { name: "Xanh Titan", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham11/i_2.webp"] }
     ]
   },
   {
@@ -129,9 +129,9 @@ const products = [
       { storage: "1TB",   oldPrice: 44990000, newPrice: 35990000 }
     ],
     colors: [
-      { name: "Đen Không Gian", hex: "#2b2b2b", imgs: [] },
-      { name: "Vàng Sa Mạc", hex: "#c9a86a", imgs: [] },
-      { name: "Trắng Mây", hex: "#f2f2f2", imgs: [] }
+      { name: "Đen Không Gian", hex: "#2b2b2b", imgs: ["../../public/imgs/products/sanpham12/i_1.webp"] },
+      { name: "Vàng Sa Mạc", hex: "#c9a86a", imgs: ["../../public/imgs/products/sanpham12/i_2.webp"] },
+      { name: "Trắng Mây", hex: "#f2f2f2", imgs: ["../../public/imgs/products/sanpham12/i_3.webp"] }
     ]
   },
   {
@@ -142,8 +142,8 @@ const products = [
       { storage: "8GB/256GB", oldPrice: 11990000, newPrice: 11990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Hồng", hex: "#e8b9c4", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham13/i_1.webp"] },
+      { name: "Hồng", hex: "#e8b9c4", imgs: ["../../public/imgs/products/sanpham13/i_2.webp"] }
     ]
   },
   {
@@ -154,8 +154,8 @@ const products = [
       { storage: "12GB/512GB", oldPrice: 24990000, newPrice: 22990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Bạc", hex: "#cfd2d6", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham14/i_1.webp"] },
+      { name: "Bạc", hex: "#cfd2d6", imgs: ["../../public/imgs/products/sanpham14/i_2.webp"] }
     ]
   },
   {
@@ -166,8 +166,8 @@ const products = [
       { storage: "12GB/512GB", oldPrice: 20990000, newPrice: 18990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh", hex: "#3d4f5c", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham15/i_1.webp"] },
+      { name: "Xanh", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham15/i_2.webp"] }
     ]
   },
   {
@@ -178,8 +178,8 @@ const products = [
       { storage: "8GB/256GB", oldPrice: 17990000, newPrice: 15990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh", hex: "#3d4f5c", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham16/i_1.webp"] },
+      { name: "Xanh", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham16/i_2.webp"] }
     ]
   },
   {
@@ -192,9 +192,9 @@ const products = [
       { storage: "16GB/1TB",   oldPrice: 42790000, newPrice: 36790000 }
     ],
     colors: [
-      { name: "Đen Titan", hex: "#1c1c1e", imgs: [] },
-      { name: "Bạc Titan", hex: "#cfd2d6", imgs: [] },
-      { name: "Xanh Titan", hex: "#3d4f5c", imgs: [] }
+      { name: "Đen Titan", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham17/i_1.webp"] },
+      { name: "Bạc Titan", hex: "#cfd2d6", imgs: ["../../public/imgs/products/sanpham17/i_2.webp"] },
+      { name: "Xanh Titan", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham17/i_3.webp"] }
     ]
   },
   {
@@ -205,9 +205,9 @@ const products = [
       { storage: "256GB", oldPrice: 34990000, newPrice: 30990000 }
     ],
     colors: [
-      { name: "Titan Đen", hex: "#2b2b2b", imgs: [] },
-      { name: "Titan Sa Mạc", hex: "#c9a86a", imgs: [] },
-      { name: "Titan Tự Nhiên", hex: "#8a8a8a", imgs: [] }
+      { name: "Titan Đen", hex: "#2b2b2b", imgs: ["../../public/imgs/products/sanpham18/i_1.webp"] },
+      { name: "Titan Sa Mạc", hex: "#c9a86a", imgs: ["../../public/imgs/products/sanpham18/i_2.webp"] },
+      { name: "Titan Tự Nhiên", hex: "#8a8a8a", imgs: ["../../public/imgs/products/sanpham18/i_3.webp"] }
     ]
   },
   {
@@ -219,8 +219,8 @@ const products = [
       { storage: "12GB/512GB", oldPrice: 29490000, newPrice: 22990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Bạc", hex: "#cfd2d6", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham19/i_1.webp"] },
+      { name: "Bạc", hex: "#cfd2d6", imgs: ["../../public/imgs/products/sanpham19/i_2.webp"] }
     ]
   },
   {
@@ -231,11 +231,12 @@ const products = [
       { storage: "128GB", oldPrice: 19990000, newPrice: 17990000 }
     ],
     colors: [
-      { name: "Đen", hex: "#1c1c1e", imgs: [] },
-      { name: "Xanh Dương", hex: "#4a6fa5", imgs: [] },
-      { name: "Hồng", hex: "#e8b9c4", imgs: [] },
-      { name: "Vàng", hex: "#e6d19a", imgs: [] }
+      { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham20/i_1.webp"] },
+      { name: "Xanh Dương", hex: "#4a6fa5", imgs: ["../../public/imgs/products/sanpham20/i_2.webp"] },
+      { name: "Hồng", hex: "#e8b9c4", imgs: ["../../public/imgs/products/sanpham20/i_3.webp"] },
+      { name: "Vàng", hex: "#e6d19a", imgs: ["../../public/imgs/products/sanpham20/i_4.webp"] }
     ]
   }
 ];
- 
+
+export default products;
