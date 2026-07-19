@@ -30,7 +30,7 @@ function  checkEmail(){
 
 function addToCart(product){
     const toast = new bootstrap.Toast(document.getElementById('cartToast'));
-    const comFrom = document.getElementById("from");
+    const comeFrom = document.getElementById("from");
     const toastHeader = document.getElementById("toastHeader");
     const toastBody = document.getElementById("toastBody");
         if(!checkLogin()){

@@ -11,7 +11,7 @@ export function renderProduct(products,addToCart,root_id){
 
     // ---- productCard----
     const productCard = document.createElement('section');
-    productCard.classList.add('product_card', 'd-flex', 'flex-column', 'h-100');
+    productCard.classList.add('product_card', 'd-flex', 'flex-column', 'h-100','justify-content-between','align-items-center');
 
     // ----- Thumb ------
     const containImg = document.createElement('div');
@@ -23,7 +23,7 @@ export function renderProduct(products,addToCart,root_id){
 
     // ---- Desc ------
     const containDesc = document.createElement('div');
-    containDesc.classList.add('containDesc');
+    containDesc.classList.add('containDesc','text-center');
     
     // ---- Title ----
     const title = document.createElement('h5');
