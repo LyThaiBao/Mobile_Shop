@@ -57,4 +57,4 @@ export function renderProduct(products,addToCart,root_id){
 
 }
 
-localStorage.setItem('username',JSON.stringify('Timmy'))
+localStorage.setItem('username',JSON.stringify('Timmy'))    

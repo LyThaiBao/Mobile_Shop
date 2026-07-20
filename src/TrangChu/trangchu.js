@@ -35,12 +35,12 @@ function addToCart(product){
     const toastBody = document.getElementById("toastBody");
         if(!checkLogin()){
             toastHeader.setAttribute('class','toast-header bg-danger')
-            comFrom.innerText = "Thông Báo"
+            comeFrom.innerText = "Thông Báo"
             toastBody.innerText = "Vui lòng đăng nhập";
         }
         else{
             toastHeader.setAttribute('class','toast-header bg-info')
-            comFrom.innerText = "Giỏ Hàng"
+            comeFrom.innerText = "Giỏ Hàng"
             toastBody.innerText = "Đã thêm sản phẩm vào giỏ hàng!";
             saveProductToCart(product)
         }
