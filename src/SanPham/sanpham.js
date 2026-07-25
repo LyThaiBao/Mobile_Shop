@@ -3,8 +3,7 @@ import {renderProduct} from "../../utils/renderProduct.js"
 import {checkLogin} from "../../utils/checkLogin.js"
 import {saveProductToCart} from "../../utils/cart.js"
 import { clearRenderProduct } from "../../utils/clearRenderProduct.js";
-
-
+import {checkEmail} from "../../utils/checkEmail.js"
 
 function matchRange(product, min, max) {
     return product.variants.some(v => v.newPrice >= min && v.newPrice < max);
@@ -61,5 +60,4 @@ function addToCart(product){
         }
         toast.show();
 }
-
 filter();

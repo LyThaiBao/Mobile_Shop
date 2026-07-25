@@ -5,7 +5,7 @@
   --gradient-dark: linear-gradient(135deg, #1E3A8A 0%, #312E81 100%);
   --gradient-glow: linear-gradient(135deg, #3B82F6 0%, #6366F1 50%, #8B5CF6 100%);
   --text-primary:#2FE3A6;
-
+  --text-on-gradient: #16213a;
 }
 
 /* Background Color */
@@ -64,8 +64,12 @@ li{
     margin-top: 60px;
 }
 
+footer{
+  margin: 5px 0;
+  background: var(--gradient-primary);
+}
 #bottom-placeholder{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 /* Tranfrom */
 .translate-full-x { 
@@ -123,13 +127,22 @@ li{
     color: var(--text-primary);
 }
 .text-gray{
-    color: #39373c;
+    color: #79787c;
 }
   /* text-color */
-  .text-md-blue{
+  .text-blue{
     color: blue !important;
   }
+  .text-insta{
+    color: #E1306C;   
+  }
+  .text-tik{
+    color: #5c0718; 
+  }
 
+  .text-navy{
+    color: var(--text-on-gradient) !important;
+  }
 
 /* Font weight */
 .bold{
@@ -261,16 +274,16 @@ li{
  
   /* -----Wrapper */
   .wrapper{
-    /* padding-left: 20px;
-    padding-right: 20px; */
-    /* padding-top:8px; */
+    /* padding: 10px 15px; */
 
   }
   /* Font size > mobile */
   .fs-md{
     font-size: 1.1rem;
   }
-  
+    #bottom-placeholder{
+    margin: 0;
+  }
   
 }
 
@@ -280,4 +293,5 @@ li{
   .position-lg-fixed {
     position: fixed !important;
   }
+
 }

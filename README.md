@@ -31,3 +31,11 @@
         <script src="./components/header/loadHeader.js"  type="module"></script>
     <script src="./components/bottom_mobile/loadBottomMobile.js"  type="module"></script>
     ```
+### Load Footer
+```+B1:Gắn footer placeholder vào ngay bên dưới thẻ main của ae, copy code bên dưới dán vào bên trong thẻ body (tham khảo trang index.html,sanpham.html)
+    <main>thẻ main ae ở đây </main>
+    <footer id="footer" class="px-3"></footer>
+```
+ ```+B2: Gọi Scrpit tiến hành load component vào, copy code bên dưới dán vào ngay bên dưới thẻ body(tham khảo trang index.html,sanpham.html)
+    <script src="../../components/footer/loadFooter.js" type="module"></script>
+ ```

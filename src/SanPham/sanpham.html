@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper overflow-hidden">
 
-        <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app px-2 py-2"></header>
+        <header id="header" class="d-flex justify-content-between align-items-center bg-primary-app p-2"></header>
 
         <main id="main" class="px-3">
         <div class="row">
@@ -24,76 +24,74 @@
                          <strong class="me-auto" id="from"></strong>
                          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                     </div>
-                    <div class="toast-body" id="toastBody">
-                    </div>
+                    <div class="toast-body" id="toastBody"></div>
                </div>
           </div>
 
           <!-- data-bs-toggle="offcanvas" và data-bs-target="#filterOffcanvas" ản hiện phần tử có id filterOffcanvas -->
-     <button class="btn btn-info d-xl-none mt-3
-     " type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas">
+          <button class="btn btn-info d-xl-none mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas">
           Bộ lọc
-     </button>
+          </button>
      <!-- offcanvas-lg class của bootstrap, khi duoi lg sẽ hien duoi dang panel ẩn hiện có overlay -->
       <!-- offcanvas-start trược vào từ bên trái -->
        <!-- style="--bs-offcanvas-width: 80vw;" áp dụng kích thước với phần tử có offcanvas-lg  -->
-    <div class="offcanvas-xl offcanvas-start col-xl-3 px-3" tabindex="-1" id="filterOffcanvas" style="--bs-offcanvas-width: 50vw;">
-        <div class="offcanvas-header d-xl-none">
-            <h5 class="offcanvas-title">Bộ lọc</h5>
-            <button type="button" class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"></button>
-        </div>
-        <div class="">
-            <form action="" id="filter_form">
-                <fieldset class="d-flex flex-column">
-                    <legend>Hang</legend>
-                    <label class="d-flex justify-content-between">Apple<input type="checkbox" value="Apple" name="hang"></label>
-                    <label class="d-flex justify-content-between">Samsung<input type="checkbox" value="Samsung" name="hang"></label>
-                    <label class="d-flex justify-content-between">OPPO<input type="checkbox" value="OPPO" name="hang"></label>
-                    <label class="d-flex justify-content-between">Xiaomi<input type="checkbox" value="Xiaomi" name="hang"></label>
-                    <label class="d-flex justify-content-between">Nubia<input type="checkbox" value="Nubia" name="hang"></label>
-                    <label class="d-flex justify-content-between">HONOR<input type="checkbox" value="HONOR" name="hang"></label>
-                </fieldset>
-                <fieldset class="">
-                    <legend>Gia</legend>
-                    <label class="d-flex justify-content-between">Dưới 10 triệu<input type="radio" value="0-10000000" name="gia"></label>
-                    <label class="d-flex justify-content-between">10 - 20 triệu<input type="radio" value="10000000-20000000" name="gia"></label>
-                    <label class="d-flex justify-content-between">20 - 30 triệu<input type="radio" value="20000000-30000000" name="gia"></label>
-                    <label class="d-flex justify-content-between">30 - 45 triệu<input type="radio" value="30000000-45000000" name="gia"></label>
-                    <label class="d-flex justify-content-between">Trên 45 triệu<input type="radio" value="45000000-999999999" name="gia"></label>
-                </fieldset>
-            </form>
-        </div>
-    </div>
+          <div class="offcanvas-xl offcanvas-start col-xl-3 px-3" tabindex="-1" id="filterOffcanvas" style="--bs-offcanvas-width: 50vw;">
+               <div class="offcanvas-header d-xl-none">
+                    <h5 class="offcanvas-title">Bộ lọc</h5>
+                    <button type="button" class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"></button>
+               </div>
+               <div class="">
+                    <form action="" id="filter_form">
+                         <fieldset class="d-flex flex-column">
+                              <legend class="mb-0">Hãng</legend>
+                              <label class="d-flex justify-content-between">Apple<input type="checkbox" value="Apple" name="hang"></label>
+                              <label class="d-flex justify-content-between">Samsung<input type="checkbox" value="Samsung" name="hang"></label>
+                              <label class="d-flex justify-content-between">OPPO<input type="checkbox" value="OPPO" name="hang"></label>
+                              <label class="d-flex justify-content-between">Xiaomi<input type="checkbox" value="Xiaomi" name="hang"></label>
+                              <label class="d-flex justify-content-between">Nubia<input type="checkbox" value="Nubia" name="hang"></label>
+                              <label class="d-flex justify-content-between">HONOR<input type="checkbox" value="HONOR" name="hang"></label>
+                         </fieldset>
+                         <fieldset class="mt-4">
+                              <legend class="mb-0">Giá</legend>
+                              <label class="d-flex justify-content-between">Dưới 10 triệu<input type="radio" value="0-10000000" name="gia"></label>
+                              <label class="d-flex justify-content-between">10 - 20 triệu<input type="radio" value="10000000-20000000" name="gia"></label>
+                              <label class="d-flex justify-content-between">20 - 30 triệu<input type="radio" value="20000000-30000000" name="gia"></label>
+                              <label class="d-flex justify-content-between">30 - 45 triệu<input type="radio" value="30000000-45000000" name="gia"></label>
+                              <label class="d-flex justify-content-between">Trên 45 triệu<input type="radio" value="45000000-999999999" name="gia"></label>
+                         </fieldset>
+                    </form>
+               </div>
+          </div>
 
     <div id="container_products" class="px-3 col-xl-9">
     </div>
 
-</div>
+        </div>
 
-               <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-                    <div class="modal-dialog">
-                         <div class="modal-content">
+        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+               <div class="modal-dialog">
+                    <div class="modal-content">
                          <div class="modal-header">
                               <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                          </div>
-                         <div class="modal-body">
-                              Tài khoản của bạn đang được xét duyệt nhận ưu đãi !
-                         </div>
+                         <div class="modal-body">Tài khoản của bạn đang được xét duyệt nhận ưu đãi !</div>
                          <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
                          </div>
-                         </div>
                     </div>
                </div>
-          </div>     
+        </div>
         </main>
-
-    </div>
-
-    <div id="bottom-placeholder" class=""></div>
+     
+     <footer class="px-3" id="footer">
+       
+     </footer>
+     <div id="bottom-placeholder" class=""></div>
+    </div>     
 
 </body>
+<script src="../../components/footer/loadFooter.js" type="module"></script>
 <script src="../../components/header/loadHeader.js" type="module"></script>
 <script src="../../components/bottom_mobile/loadBottomMobile.js" type="module"></script>
 <script src="./sanpham.js" type="module"></script>
