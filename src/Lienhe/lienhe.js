@@ -37,4 +37,6 @@ function validateAndSubmitContact() {
     });
 }
 
+
+
 validateAndSubmitContact();
