@@ -2,31 +2,10 @@ import {products} from "../../data/products/products.js"
 import {checkLogin} from "../../utils/checkLogin.js"
 import {renderProduct} from "../../utils/renderProduct.js"
 import {saveProductToCart} from "../../utils/cart.js"
-
+import {checkEmail} from "../../utils/checkEmail.js"
 const productsShow = products.slice(7,11);
-renderProduct(productsShow,addToCart,'container_products');
 
-function  checkEmail(){
-    const modal = new bootstrap.Modal(document.getElementById('notifyModal'));
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const boxEmail = document.getElementById("box_email");
-    const btn = document.getElementById("trigger");
-    const error = document.getElementById("email_error");
-    btn.addEventListener('click',()=>{
-       if(!boxEmail.value.trim()){
-            error.innerText = "Không được để email trống";
-            return;
-       }
-       if(!regex.test(boxEmail.value.trim())){
-        error.innerText = "Email không hợp lệ!"
-        return;
-       }
-   
-           modal.show();
-           boxEmail.value = error.innerText = ""; 
-    })
 
-}
 
 function addToCart(product){
     const toast = new bootstrap.Toast(document.getElementById('cartToast'));
@@ -47,5 +26,6 @@ function addToCart(product){
         toast.show();
 }
 
-checkEmail()
-// renderHighLightProduct();
+
+renderProduct(productsShow,addToCart,'container_products');
+
