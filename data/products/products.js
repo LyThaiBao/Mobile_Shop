@@ -32,23 +32,6 @@ export const products = [
     ]
   },
   {
-    id: 3,
-    name: "iPhone 17 Pro Max 256GB | Chính hãng",
-    brand: "Apple",
-    desc: "Màn hình 6.9\", chip A19 Pro",
-    variants: [
-      { storage: "256GB", oldPrice: 37990000, newPrice: 35990000 },
-      { storage: "512GB", oldPrice: 43390000, newPrice: 41990000 },
-      { storage: "1TB",   oldPrice: 50990000, newPrice: 48990000 },
-      { storage: "2TB",   oldPrice: 63990000, newPrice: 60990000 }
-    ],
-    colors: [
-      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: ["../../public/imgs/products/sanpham3/i_1.webp"] },
-      { name: "Titan Cam", hex: "#c96a3e", imgs: ["../../public/imgs/products/sanpham3/i_2.webp"] },
-      { name: "Titan Bạc", hex: "#d9d9d9", imgs: ["../../public/imgs/products/sanpham3/i_3.webp"] }
-    ]
-  },
-  {
     id: 4,
     name: "Samsung Galaxy A17 5G 8GB 128GB",
     brand: "Samsung",
@@ -181,6 +164,24 @@ export const products = [
     colors: [
       { name: "Đen", hex: "#1c1c1e", imgs: ["../../public/imgs/products/sanpham15/i_1.webp"] },
       { name: "Xanh", hex: "#3d4f5c", imgs: ["../../public/imgs/products/sanpham15/i_2.webp"] }
+    ]
+  },
+  
+  {
+    id: 3,
+    name: "iPhone 17 Pro Max 256GB | Chính hãng",
+    brand: "Apple",
+    desc: "Màn hình 6.9\", chip A19 Pro",
+    variants: [
+      { storage: "256GB", oldPrice: 37990000, newPrice: 35990000 },
+      { storage: "512GB", oldPrice: 43390000, newPrice: 41990000 },
+      { storage: "1TB",   oldPrice: 50990000, newPrice: 48990000 },
+      { storage: "2TB",   oldPrice: 63990000, newPrice: 60990000 }
+    ],
+    colors: [
+      { name: "Titan Xanh Đậm", hex: "#2b3a4a", imgs: ["../../public/imgs/products/sanpham3/i_1.webp"] },
+      { name: "Titan Cam", hex: "#c96a3e", imgs: ["../../public/imgs/products/sanpham3/i_2.webp"] },
+      { name: "Titan Bạc", hex: "#d9d9d9", imgs: ["../../public/imgs/products/sanpham3/i_3.webp"] }
     ]
   },
   {

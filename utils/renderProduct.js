@@ -56,5 +56,3 @@ export function renderProduct(products,addToCart,root_id){
     containProduct.append(row);
 
 }
-
-localStorage.setItem('username',JSON.stringify('Timmy'))    
