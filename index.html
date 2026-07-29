@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang Chủ</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <!-- root css -->
@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="./src/TrangChu/trangchu.css">
      <!-- icon -->
       <link rel="stylesheet" href="../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
-      <!-- json -->
+      <!-- js -->
        <script src="./lib/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-white">
@@ -42,56 +42,54 @@
 
       <!-- Category -->
     <div id="category" class="py-2 my-2 d-flex px-2 gap-2">
-  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-iphone">
-    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
-      <i class="bi bi-apple fs-5"></i>
+    <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-iphone">
+      <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+        <i class="bi bi-apple fs-5"></i>
+      </div>
+      <span class="small fw-medium">iPhone</span>
     </div>
-    <span class="small fw-medium">iPhone</span>
-  </div>
 
-  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-android">
-    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
-      <i class="bi bi-android2 fs-5"></i>
+    <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-android">
+      <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+        <i class="bi bi-android2 fs-5"></i>
+      </div>
+      <span class="small fw-medium">Android</span>
     </div>
-    <span class="small fw-medium">Android</span>
-  </div>
 
-  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-accessory">
-    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
-      <i class="bi bi-brush-fill fs-5"></i>
+    <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-accessory">
+      <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+        <i class="bi bi-brush-fill fs-5"></i>
+      </div>
+      <span class="small fw-medium">Phụ kiện</span>
     </div>
-    <span class="small fw-medium">Phụ kiện</span>
-  </div>
 
-  <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-promo">
-    <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
-      <i class="bi bi-ticket-perforated-fill fs-5"></i>
+    <div class="category_item flex-fill px-2 py-3 px-md-3 py-md-4 d-flex gap-2 flex-column justify-content-center align-items-center rounded-4 category-card card-promo">
+      <div class="category_icon d-flex justify-content-center align-items-center rounded-circle">
+        <i class="bi bi-ticket-perforated-fill fs-5"></i>
+      </div>
+      <span class="small fw-medium">Khuyến mãi</span>
     </div>
-    <span class="small fw-medium">Khuyến mãi</span>
-  </div>
     </div>
 
     <!-- Product -->
      <div id="product" class="px-3 py-4">
-      <div class="product_intro d-flex align-items-center justify-content-between mb-3">
-        <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
-        <span tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}">Xem tất cả <i class="bi bi-arrow-right"></i></span>
+        <div class="product_intro d-flex align-items-center justify-content-between mb-3">
+          <sapn class="ex-bold">Sản phẩm nổi bậc</sapn>
+          <span tabindex="-1" class=" text-success ex-bold" onclick="{console.log(window.location.pathname = '/src/SanPham/sanpham.html')}">Xem tất cả <i class="bi bi-arrow-right"></i></span>
+        </div>
+        <div id="container_products" class="px-3"></div>
+        <!-- Toast -->
+          <div class="toast-container position-fixed top-0 end-0 p-3 ">
+          <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div  id="toastHeader">
+          <strong class="me-auto" id="from"></strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body" id="toastBody">
+        
+        </div>
       </div>
-      <div id="container_products" class="px-3">
-
-      </div>
-      <!-- Toast -->
-       <div class="toast-container position-fixed top-0 end-0 p-3 ">
-  <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div  id="toastHeader">
-      <strong class="me-auto" id="from"></strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-    </div>
-    <div class="toast-body" id="toastBody">
-     
-    </div>
-  </div>
-</div>
+          </div>
      </div>
 
      <!-- About -->
@@ -124,54 +122,15 @@
           </div>
         </div>
       </div>
-
-      <!-- Signup -->
-       <div id="signup" class="px-3 mt-5 d-flex justify-content-between flex-column gap-2 flex-lg-row">
-          <div class="text-center">
-            <span>Đăng ký nhận ưu đãi</span>
-            <p>Nhận mã giảm giá sản phẩm mới mỗi tuần.</p>
-          </div>
-          
-            <div class="d-flex flex-column flex-lg-row align-items-start gap-2">
-              <div class="d-flex flex-column flex-grow-1 w-100">
-                <input 
-                  type="email" 
-                  name="box_email" 
-                  id="box_email" 
-                  class="form-control border-success border-2" 
-                  required 
-                  placeholder="Email của bạn"
-                >
-                <small id="email_error" class="text-danger mt-1"></small>
-              </div>
-
-              <button type="button" class="btn btn-primary text-nowrap" id="trigger">
-                Đăng ký
-              </button>
-            </div>
-       </div>
-       <!-- Modal -->
-        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Tài khoản của bạn đang được xét duyệt nhận ưu đãi !
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-        </div>
-  </div>
-</div>
     </main>
+  </div>
+    <footer id="footer" class="px-3"></footer>
      <div id="bottom-placeholder" class=""></div>
    </div>
 </body>
 <!-- Load header và mobile nav vao -->
 <script src="./components/header/loadHeader.js" type="module"></script>
+<script src="../../components/footer/loadFooter.js" type="module"></script>
 <script src="./components/bottom_mobile/loadBottomMobile.js"  type="module"></script>
 <script src="./src/TrangChu/trangchu.js" type="module"></script>
 </html>

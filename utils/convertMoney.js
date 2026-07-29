@@ -29,7 +29,7 @@ export function convertToNumber(VietnameseMoney){
     return Number(s.join(""));
 }
 
-// const a = formatVietnameseMoney(-120000);
+// const a = formatVietnameseMoney(120000);
 // const b = convertToNumber(a);
 // console.log(a);
 // console.log(b);

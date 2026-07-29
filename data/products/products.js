@@ -2,6 +2,7 @@ export const products = [
   {
     id: 1,
     name: "iPhone 17 Pro 256GB | Chính hãng",
+    brand: "Apple",
     desc: "Màn hình 6.3\", chip A19 Pro, trả góp 0%",
     variants: [
       { storage: "256GB", oldPrice: 34990000, newPrice: 33890000 },
@@ -17,6 +18,7 @@ export const products = [
   {
     id: 2,
     name: "Samsung Galaxy S26 Ultra 5G",
+    brand: "Samsung",
     desc: "Màn hình 6.9\", Snapdragon 8 Elite Gen 5",
     variants: [
       { storage: "12GB/256GB", oldPrice: 36990000, newPrice: 31590000 },
@@ -32,6 +34,7 @@ export const products = [
   {
     id: 3,
     name: "iPhone 17 Pro Max 256GB | Chính hãng",
+    brand: "Apple",
     desc: "Màn hình 6.9\", chip A19 Pro",
     variants: [
       { storage: "256GB", oldPrice: 37990000, newPrice: 35990000 },
@@ -48,6 +51,7 @@ export const products = [
   {
     id: 4,
     name: "Samsung Galaxy A17 5G 8GB 128GB",
+    brand: "Samsung",
     desc: "Màn hình 6.7\", pin bền bỉ",
     variants: [
       { storage: "8GB/128GB", oldPrice: 6390000, newPrice: 6090000 }
@@ -61,6 +65,7 @@ export const products = [
   {
     id: 7,
     name: "OPPO Find X9s 12GB 256GB",
+    brand: "OPPO",
     desc: "Màn hình 6.59\", camera Hasselblad",
     variants: [
       { storage: "12GB/256GB", oldPrice: 24990000, newPrice: 23990000 }
@@ -73,6 +78,7 @@ export const products = [
   {
     id: 8,
     name: "OPPO Find N6 16GB 512GB",
+    brand: "OPPO",
     desc: "Điện thoại gập, màn phụ 6.62\" - màn chính 8.12\"",
     variants: [
       { storage: "16GB/512GB", oldPrice: 64990000, newPrice: 64990000 }
@@ -85,6 +91,7 @@ export const products = [
   {
     id: 9,
     name: "Nubia Neo 5 5G 8GB 128GB",
+    brand: "Nubia",
     desc: "Màn hình 6.8\", pin dung lượng lớn",
     variants: [
       { storage: "8GB/128GB", oldPrice: 7490000, newPrice: 6990000 }
@@ -97,6 +104,7 @@ export const products = [
   {
     id: 10,
     name: "Samsung Galaxy A57 5G 8GB 128GB",
+    brand: "Samsung",
     desc: "Màn hình 6.7\", chip Exynos 1680",
     variants: [
       { storage: "8GB/128GB", oldPrice: 12490000, newPrice: 11990000 }
@@ -110,6 +118,7 @@ export const products = [
   {
     id: 11,
     name: "Xiaomi 14T Pro 12GB 512GB",
+    brand: "Xiaomi",
     desc: "Màn hình 6.67\", camera Leica",
     variants: [
       { storage: "12GB/512GB", oldPrice: 17670000, newPrice: 12990000 }
@@ -122,6 +131,7 @@ export const products = [
   {
     id: 12,
     name: "iPhone Air 256GB | Chính hãng",
+    brand: "Apple",
     desc: "Màn hình 6.5\", thiết kế siêu mỏng",
     variants: [
       { storage: "256GB", oldPrice: 31990000, newPrice: 24990000 },
@@ -137,6 +147,7 @@ export const products = [
   {
     id: 13,
     name: "OPPO Reno15 F 5G 8GB 256GB",
+    brand: "OPPO",
     desc: "Màn hình 6.57\", thiết kế mỏng nhẹ",
     variants: [
       { storage: "8GB/256GB", oldPrice: 11990000, newPrice: 11990000 }
@@ -149,6 +160,7 @@ export const products = [
   {
     id: 14,
     name: "Xiaomi 17T Pro 5G 12GB 512GB",
+    brand: "Xiaomi",
     desc: "Màn hình 6.83\", camera Telephoto",
     variants: [
       { storage: "12GB/512GB", oldPrice: 24990000, newPrice: 22990000 }
@@ -161,6 +173,7 @@ export const products = [
   {
     id: 15,
     name: "Xiaomi 17T 5G 12GB 512GB",
+    brand: "Xiaomi",
     desc: "Màn hình 6.59\", camera Telephoto",
     variants: [
       { storage: "12GB/512GB", oldPrice: 20990000, newPrice: 18990000 }
@@ -173,6 +186,7 @@ export const products = [
   {
     id: 16,
     name: "HONOR 600 5G 8GB 256GB",
+    brand: "HONOR",
     desc: "Màn hình 6.57\", camera AI, hàng mới về",
     variants: [
       { storage: "8GB/256GB", oldPrice: 17990000, newPrice: 15990000 }
@@ -185,6 +199,7 @@ export const products = [
   {
     id: 17,
     name: "Samsung Galaxy S25 Ultra 12GB 256GB",
+    brand: "Samsung",
     desc: "Màn hình 6.9\", Snapdragon 8 Elite",
     variants: [
       { storage: "12GB/256GB", oldPrice: 31990000, newPrice: 27490000 },
@@ -200,6 +215,7 @@ export const products = [
   {
     id: 18,
     name: "iPhone 16 Pro Max 256GB",
+    brand: "Apple",
     desc: "Màn hình 6.9\", chip A18 Pro, sắp về hàng",
     variants: [
       { storage: "256GB", oldPrice: 34990000, newPrice: 30990000 }
@@ -213,6 +229,7 @@ export const products = [
   {
     id: 19,
     name: "Samsung Galaxy S25 Plus 256GB",
+    brand: "Samsung",
     desc: "Màn hình 6.7\", Snapdragon 8 Elite",
     variants: [
       { storage: "12GB/256GB", oldPrice: 26500000, newPrice: 20290000 },
@@ -226,6 +243,7 @@ export const products = [
   {
     id: 20,
     name: "iPhone 15 128GB | Chính hãng VN/A",
+    brand: "Apple",
     desc: "Màn hình 6.1\", chip A16 Bionic",
     variants: [
       { storage: "128GB", oldPrice: 19990000, newPrice: 17990000 }

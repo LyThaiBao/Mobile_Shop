@@ -31,3 +31,27 @@
         <script src="./components/header/loadHeader.js"  type="module"></script>
     <script src="./components/bottom_mobile/loadBottomMobile.js"  type="module"></script>
     ```
+### Load Footer
+```+B1:Gắn footer placeholder vào ngay bên dưới thẻ main của ae, copy code bên dưới dán vào bên trong thẻ body (tham khảo trang index.html,sanpham.html)
+    <main>thẻ main ae ở đây </main>
+    <footer id="footer" class="px-3"></footer>
+```
+ ```+B2: Gọi Scrpit tiến hành load component vào, copy code bên dưới dán vào ngay bên dưới thẻ body(tham khảo trang index.html,sanpham.html)
+    <script src="../../components/footer/loadFooter.js" type="module"></script>
+ ```
+
+
+
+ ```
+Muốn lấy nhánh 3 từ GitHub về máy, bạn làm theo các bước sau:
+
+Bước 1: Cập nhật thông tin từ remote (fetch)
+git fetch origin
+
+Bước 2: Kiểm tra xem đã thấy nhánh 3 chưa
+git branch -r
+
+Bước 3: Tạo nhánh local từ nhánh remote đó và chuyển qua
+git checkout -b nhanh-3 origin/nhanh-3
+
+ ```
