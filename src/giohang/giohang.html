@@ -4,148 +4,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Giỏ hàng</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 
     <!-- Root CSS -->
-    <link rel="stylesheet" href="../public/css/root.css">
+    <link rel="stylesheet" href="../../public/css/root.css">
 
     <!-- CSS của trang -->
-   <link rel="stylesheet" href="./giohang.css">
+    <link rel="stylesheet" href="./giohang.css">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
+
     <div class="wrapper">
-        <!-- Header -->
+
+        <!-- ================= HEADER ================= -->
         <header id="header"
             class="d-flex justify-content-between align-items-center bg-primary-app px-2">
         </header>
-        <!-- Nội dung -->
+
+
+        <!-- ================= NỘI DUNG ================= -->
         <main class="container py-4">
-            <h1 class="text-center mb-4">Giỏ hàng</h1>
-            <!-- Sản phẩm 1 -->
-            <div class="cart-item"><i class="bi bi-cart-check"></i>
+
+            <h1 class="text-center mb-4">
+                Giỏ hàng
+            </h1>
+
+
+            <!-- ================= SẢN PHẨM 1 ================= -->
+            <div class="cart-item">
+
                 <div class="check">
                     <input type="checkbox" checked>
                 </div>
-              <img src="../../public/imgs/products/sanpham3/i_2.webp" alt="">
+
+                <img src="../../public/imgs/products/sanpham3/i_2.webp"
+                    alt="Sản phẩm 1">
+
                 <div class="info">
+
                     <p>
                         Màn hình Super AMOLED 6.7", 120Hz <br>
                         Camera 50MP, pin 5000mAh <br>
                         Hỗ trợ 5G siêu tốc
                     </p>
+
                     <div class="price-red">
                         22.990.000đ
                     </div>
+
                     <div class="actions">
+
+                        <!-- Xóa -->
                         <button>
                             <i class="fa-regular fa-trash-can"></i>
                         </button>
+
+                        <!-- Số lượng -->
                         <div class="quantity">
                             <button>-</button>
                             <span>1</span>
                             <button>+</button>
                         </div>
+
+                        <!-- Yêu thích -->
                         <button>
                             <i class="fa-regular fa-heart"></i>
                         </button>
+
                     </div>
                 </div>
+
                 <div class="right">
+
                     <button class="close">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
+
                     <div class="total-price">
                         22.990.000đ
                     </div>
+
                 </div>
+
             </div>
 
-            <!-- Sản phẩm 2 -->
+
+            <!-- ================= SẢN PHẨM 2 ================= -->
             <div class="cart-item">
+
                 <div class="check">
                     <input type="checkbox" checked>
                 </div>
-             <img src="../../public/imgs/products/sanpham18/i_3.webp" alt="">
+
+                <img src="../../public/imgs/products/sanpham18/i_3.webp"
+                    alt="Sản phẩm 2">
+
                 <div class="info">
+
                     <p>
                         Chất liệu TPU cao cấp <br>
                         Chống sốc, chống trầy xước hiệu quả
                     </p>
+
                     <div class="price-red">
-                        19.000.000đ
+                        190.000đ
                     </div>
+
                     <div class="actions">
+
+                        <!-- Xóa -->
                         <button>
                             <i class="fa-regular fa-trash-can"></i>
                         </button>
+
+                        <!-- Số lượng -->
                         <div class="quantity">
                             <button>-</button>
                             <span>1</span>
                             <button>+</button>
                         </div>
+
+                        <!-- Yêu thích -->
                         <button>
                             <i class="fa-regular fa-heart"></i>
                         </button>
+
                     </div>
                 </div>
+
                 <div class="right">
+
                     <button class="close">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
+
                     <div class="total-price">
                         190.000đ
                     </div>
+
                 </div>
+
             </div>
+
+
+            <!-- ================= TỔNG TIỀN ================= -->
             <div class="summary">
+
                 <div class="left">
+
                     <div>
                         <span>Tạm tính</span>
                         <strong>23.180.000đ</strong>
                     </div>
+
                     <div>
                         <span>Vận chuyển</span>
-                        <strong></strong>0đ</strong>
+                        <strong>0đ</strong>
                     </div>
+
                 </div>
+
                 <div class="divider"></div>
+
                 <div class="right-summary">
-                    <h2>Tổng cộng</h2>
+
+                    <h2>
+                        Tổng cộng
+                    </h2>
+
                     <div class="grand">
-                        23.370.000đ
+                        23.180.000đ
                     </div>
+
                     <span class="free">
                         <i class="bi bi-patch-check-fill"></i>
                         Miễn phí vận chuyển
                     </span>
+
                 </div>
+
             </div>
+
+
+            <!-- ================= NÚT ================= -->
             <div class="bottom">
+
                 <button class="back">
                     <i class="bi bi-arrow-left"></i>
                     Tiếp tục mua hàng
                 </button>
+
                 <button class="pay">
                     Thanh toán
                 </button>
+
             </div>
+
         </main>
-        <!-- Bottom mobile -->
+
+
+        <!-- ================= FOOTER ================= -->
+        <footer id="footer" class="px-3"></footer>
+
+
+        <!-- ================= BOTTOM MOBILE ================= -->
         <div id="bottom-placeholder"></div>
+
     </div>
-    <script src="./components/header/loadHeader.js" type="module"></script>
-    <script src="./components/bottom_mobile/loadBottomMobile.js" type="module"></script>
+
+
+    <!-- ================= LOAD COMPONENT ================= -->
+
+    <!-- Header -->
+    <script src="../../components/header/loadHeader.js"
+        type="module"></script>
+
+    <!-- Bottom mobile -->
+    <script src="../../components/bottom_mobile/loadBottomMobile.js"
+        type="module"></script>
+
+    <!-- Footer -->
+    <script src="../../components/footer/loadFooter.js"
+        type="module"></script>
+
+    <!-- JS của trang -->
     <script src="./giohang.js"></script>
+
 </body>
 
 </html>
