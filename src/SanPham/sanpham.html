@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/css/root.css">
     <link rel="stylesheet" href="../../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./sanpham.css">
     <script src="../../lib/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -44,20 +45,58 @@
                     <form action="" id="filter_form">
                          <fieldset class="d-flex flex-column">
                               <legend class="mb-0">Hãng</legend>
-                              <label class="d-flex justify-content-between">Apple<input type="checkbox" value="Apple" name="hang"></label>
-                              <label class="d-flex justify-content-between">Samsung<input type="checkbox" value="Samsung" name="hang"></label>
-                              <label class="d-flex justify-content-between">OPPO<input type="checkbox" value="OPPO" name="hang"></label>
-                              <label class="d-flex justify-content-between">Xiaomi<input type="checkbox" value="Xiaomi" name="hang"></label>
-                              <label class="d-flex justify-content-between">Nubia<input type="checkbox" value="Nubia" name="hang"></label>
-                              <label class="d-flex justify-content-between">HONOR<input type="checkbox" value="HONOR" name="hang"></label>
+                              <label class="brand-check">Apple
+                                   <input type="checkbox" value="Apple" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
+                               <label class="brand-check">Samsung
+                                   <input type="checkbox" value="Samsung" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="brand-check">OPPO
+                                   <input type="checkbox" value="OPPO" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="brand-check">Xiaomi
+                                   <input type="checkbox" value="Xiaomi" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="brand-check">Nubia
+                                   <input type="checkbox" value="Nubia" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
+                              <label class="brand-check">HONOR
+                                   <input type="checkbox" value="HONOR" name="hang">
+                                   <span class="checkmark"></span>
+                              </label>
                          </fieldset>
                          <fieldset class="mt-4">
                               <legend class="mb-0">Giá</legend>
-                              <label class="d-flex justify-content-between">Dưới 10 triệu<input type="radio" value="0-10000000" name="gia"></label>
-                              <label class="d-flex justify-content-between">10 - 20 triệu<input type="radio" value="10000000-20000000" name="gia"></label>
-                              <label class="d-flex justify-content-between">20 - 30 triệu<input type="radio" value="20000000-30000000" name="gia"></label>
-                              <label class="d-flex justify-content-between">30 - 45 triệu<input type="radio" value="30000000-45000000" name="gia"></label>
-                              <label class="d-flex justify-content-between">Trên 45 triệu<input type="radio" value="45000000-999999999" name="gia"></label>
+                              <label class="brand-check">
+                                   Dưới 10 triệu
+                                   <input type="radio" value="0-10000000" name="gia">
+                                   <span class="radiomark"></span>
+                              </label>
+                              <label class="brand-check">
+                                   10 - 20 triệu
+                                   <input type="radio" value="10000000-20000000" name="gia">
+                                   <span class="radiomark"></span>
+                              </label>
+                              <label class="brand-check">
+                                   20 - 30 triệu
+                                   <input type="radio" value="20000000-30000000" name="gia">
+                                   <span class="radiomark"></span>
+                              </label>
+                              <label class="brand-check">
+                                  30 - 45 triệu
+                                   <input type="radio" value="30000000-45000000" name="gia">
+                                   <span class="radiomark"></span>
+                              </label>
+                              <label class="brand-check">
+                                  Trên 45 triệu
+                                   <input type="radio" value="45000000-999999999" name="gia">
+                                   <span class="radiomark"></span>
+                              </label>
                          </fieldset>
                     </form>
                </div>
@@ -68,20 +107,7 @@
 
         </div>
 
-        <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-               <div class="modal-dialog">
-                    <div class="modal-content">
-                         <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                         </div>
-                         <div class="modal-body">Tài khoản của bạn đang được xét duyệt nhận ưu đãi !</div>
-                         <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                         </div>
-                    </div>
-               </div>
-        </div>
+     
         </main>
      
      <footer class="px-3" id="footer">
