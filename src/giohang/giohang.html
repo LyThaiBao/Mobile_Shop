@@ -35,185 +35,109 @@
 
 
         <!-- ================= NỘI DUNG ================= -->
-        <main class="container py-4">
+        <main class="cart-page">
 
-            <h1 class="text-center mb-4">
-                Giỏ hàng
-            </h1>
+    <!-- Tiêu đề -->
+    <div class="cart-title">
+        <h1>Giỏ hàng <span>(2 sản phẩm)</span></h1>
+    </div>
 
+    <div class="cart-layout">
 
-            <!-- ================= SẢN PHẨM 1 ================= -->
+        <!-- ================= DANH SÁCH SẢN PHẨM ================= -->
+        <section class="cart-products">
+
+            <!-- SẢN PHẨM 1 -->
             <div class="cart-item">
 
-                <div class="check">
-                    <input type="checkbox" checked>
+                <div class="product-img">
+                    <img src="../../public/imgs/products/sanpham3/i_2.webp"
+                        alt="Mẫu điện thoại A">
                 </div>
 
-                <img src="../../public/imgs/products/sanpham3/i_2.webp"
-                    alt="Sản phẩm 1">
-
-                <div class="info">
-
-                    <p>
-                        Màn hình Super AMOLED 6.7", 120Hz <br>
-                        Camera 50MP, pin 5000mAh <br>
-                        Hỗ trợ 5G siêu tốc
-                    </p>
+                <div class="product-info">
+                    <h2>Mẫu điện thoại A</h2>
 
                     <div class="price-red">
-                        22.990.000đ
-                    </div>
-
-                    <div class="actions">
-
-                        <!-- Xóa -->
-                        <button>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-
-                        <!-- Số lượng -->
-                        <div class="quantity">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
-                        </div>
-
-                        <!-- Yêu thích -->
-                        <button>
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
+                        24.990.000đ
                     </div>
                 </div>
 
-                <div class="right">
-
-                    <button class="close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-
-                    <div class="total-price">
-                        22.990.000đ
-                    </div>
-
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
                 </div>
 
-            </div>
-
-
-            <!-- ================= SẢN PHẨM 2 ================= -->
-            <div class="cart-item">
-
-                <div class="check">
-                    <input type="checkbox" checked>
-                </div>
-
-                <img src="../../public/imgs/products/sanpham18/i_3.webp"
-                    alt="Sản phẩm 2">
-
-                <div class="info">
-
-                    <p>
-                        Chất liệu TPU cao cấp <br>
-                        Chống sốc, chống trầy xước hiệu quả
-                    </p>
-
-                    <div class="price-red">
-                        190.000đ
-                    </div>
-
-                    <div class="actions">
-
-                        <!-- Xóa -->
-                        <button>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-
-                        <!-- Số lượng -->
-                        <div class="quantity">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
-                        </div>
-
-                        <!-- Yêu thích -->
-                        <button>
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                    </div>
-                </div>
-
-                <div class="right">
-
-                    <button class="close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-
-                    <div class="total-price">
-                        190.000đ
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================= TỔNG TIỀN ================= -->
-            <div class="summary">
-
-                <div class="left">
-
-                    <div>
-                        <span>Tạm tính</span>
-                        <strong>23.180.000đ</strong>
-                    </div>
-
-                    <div>
-                        <span>Vận chuyển</span>
-                        <strong>0đ</strong>
-                    </div>
-
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="right-summary">
-
-                    <h2>
-                        Tổng cộng
-                    </h2>
-
-                    <div class="grand">
-                        23.180.000đ
-                    </div>
-
-                    <span class="free">
-                        <i class="bi bi-patch-check-fill"></i>
-                        Miễn phí vận chuyển
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================= NÚT ================= -->
-            <div class="bottom">
-
-                <button class="back">
-                    <i class="bi bi-arrow-left"></i>
-                    Tiếp tục mua hàng
-                </button>
-
-                <button class="pay">
-                    Thanh toán
+                <button class="delete-btn">
+                    <i class="fa-regular fa-trash-can"></i>
                 </button>
 
             </div>
 
-        </main>
 
+            <!-- SẢN PHẨM 2 -->
+            <div class="cart-item">
+
+                <div class="product-img">
+                    <img src="../../public/imgs/products/sanpham18/i_3.webp"
+                        alt="Ốp lưng chống sốc">
+                </div>
+
+                <div class="product-info">
+                    <h2>Mẫu điện thoại B</h2>
+
+                    <div class="price-red">
+                        19.000.000đ
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+
+                <button class="delete-btn">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TÓM TẮT ĐƠN HÀNG ================= -->
+        <aside class="order-summary">
+
+            <h2>Tóm tắt đơn hàng</h2>
+
+            <div class="summary-row">
+                <span>Tạm tính</span>
+                <strong>0đ</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Vận chuyển</span>
+                <strong>Miễn phí</strong>
+            </div>
+
+            <div class="summary-line"></div>
+
+            <div class="summary-total">
+                <span>Tổng cộng</span>
+                <strong>25.370.000đ</strong>
+            </div>
+
+            <button class="pay-btn">
+                Tiến hành thanh toán
+            </button>
+
+        </aside>
+
+    </div>
+
+</main>
 
         <!-- ================= FOOTER ================= -->
         <footer id="footer" class="px-3"></footer>

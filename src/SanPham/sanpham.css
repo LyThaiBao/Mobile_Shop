@@ -24,8 +24,8 @@
   position:relative;
 }
 .brand-check input:checked ~ .checkmark{
-  background:#25eb99;
-  border-color:#25eb99;
+  background:#fff;
+  border-color:#fff;
 }
 .brand-check input:checked ~ .checkmark::after{
   content:"";
