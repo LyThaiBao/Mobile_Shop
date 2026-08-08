@@ -68,29 +68,36 @@ export const vi = {
             priceOver45: "Trên 45 triệu"
         }
     },
+    bottomNav: {
+        home: "Trang chủ",
+        category: "Danh mục",
+        cart: "Giỏ hàng",
+        account: "Tài khoản"
+    },
+// du lieu trang chu
     home:{
         banner: {
-        tag1: "CHÍNH HÃNG",
-        tag2: "BẢO HÀNH 12 THÁNG",
-        title: "Điện thoại chính hãng, giá tốt",
-        subtitle: "Trả góp 0%, giao hàng toàn quốc",
-        buyNow: "Mua ngay"
-    },
-    category: {
-        iphone: "iPhone",
-        android: "Android",
-        accessory: "Phụ kiện",
-        promo: "Khuyến mãi"
-    },
-    product: {
-        title: "Sản phẩm nổi bậc",
-        viewAll: "Xem tất cả",
-    },
-    about: {
-        genuine: "Hàng chính hãng",
-        shipping: "Giao toàn quốc",
-        return: "Đổi trả 7 ngày",
-        support: "Hỗ trợ 24/7"
-    }
+            tag1: "CHÍNH HÃNG",
+            tag2: "BẢO HÀNH 12 THÁNG",
+            title: "Điện thoại chính hãng, giá tốt",
+            subtitle: "Trả góp 0%, giao hàng toàn quốc",
+            buyNow: "Mua ngay"
+        },
+        category: {
+            iphone: "iPhone",
+            android: "Android",
+            accessory: "Phụ kiện",
+            promo: "Khuyến mãi"
+        },
+        product: {
+            title: "Sản phẩm nổi bậc",
+            viewAll: "Xem tất cả",
+        },
+        about: {
+            genuine: "Hàng chính hãng",
+            shipping: "Giao toàn quốc",
+            return: "Đổi trả 7 ngày",
+            support: "Hỗ trợ 24/7"
+        }
     }
 }

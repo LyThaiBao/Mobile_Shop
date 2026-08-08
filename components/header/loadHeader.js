@@ -46,6 +46,12 @@ function showUsername(){
     const username = document.getElementById("username");
     const usr = checkLogin();
     username.innerText = usr ? usr : "Đăng Nhập"
+    if(usr){
+         username.innerText = usr;
+    }
+    else{
+        username.setAttribute('data-lang','action.login');
+    }
 }
 
 function chageLang(){
