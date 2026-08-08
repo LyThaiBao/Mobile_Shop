@@ -3,6 +3,7 @@ import {checkLogin} from "../../utils/checkLogin.js"
 import {renderProduct} from "../../utils/renderProduct.js"
 import {saveProductToCart} from "../../utils/cart.js"
 import {checkEmail} from "../../utils/checkEmail.js"
+import { loadLang } from "../../utils/lang.js"
 const productsShow = products.slice(7,11);
 
 
@@ -28,4 +29,5 @@ function addToCart(product){
 
 
 renderProduct(productsShow,addToCart,'container_products');
+loadLang();
 

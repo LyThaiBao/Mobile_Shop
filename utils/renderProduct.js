@@ -1,5 +1,7 @@
 import {formatVietnameseMoney} from "./convertMoney.js"
+import { getLang } from "./lang.js";
 export function renderProduct(products,addToCart,root_id){
+    const lang = getLang();
     const containProduct = document.getElementById(root_id);
     const fragment = document.createDocumentFragment();
     const row = document.createElement('div');
@@ -27,7 +29,7 @@ export function renderProduct(products,addToCart,root_id){
     
     // ---- Title ----
     const title = document.createElement('h5');
-    title.innerText = item.name;
+    title.innerText = item.name[lang];
     title.classList.add('product-title');
     
     // ---- Price ----
@@ -37,6 +39,7 @@ export function renderProduct(products,addToCart,root_id){
     // ---- Button ----
     const buyBtn = document.createElement('button');
     buyBtn.classList.add('buy_btn');
+    buyBtn.setAttribute('data-lang','product.addToCart')
     buyBtn.innerText = '+ Thêm giỏ';
     buyBtn.addEventListener('click',()=>{
         addToCart(item);
@@ -56,5 +59,3 @@ export function renderProduct(products,addToCart,root_id){
     containProduct.append(row);
 
 }
-
-localStorage.setItem('username',JSON.stringify('Timmy'))    
