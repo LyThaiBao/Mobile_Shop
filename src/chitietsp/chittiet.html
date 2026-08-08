@@ -4,96 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Chi tiết sản phẩm</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- ================= BOOTSTRAP ================= -->
+    <link rel="stylesheet"
+        href="../../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 
-    <!-- Root CSS -->
-    <link rel="stylesheet" href="../../public/css/root.css">
+    <!-- ================= ROOT CSS ================= -->
+    <link rel="stylesheet"
+        href="../../public/css/root.css">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="../../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <!-- ================= BOOTSTRAP ICONS ================= -->
+    <link rel="stylesheet"
+        href="../../lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 
-    <!-- CSS của trang -->
-    <link rel="stylesheet" href="./chitiet.css">
+    <!-- ================= CSS CỦA TRANG ================= -->
+    <link rel="stylesheet"
+        href="./chitiet.css">
+
 </head>
+
 
 <body>
 
     <div class="wrapper">
 
-        <!-- Header -->
+        <!-- ================= HEADER ================= -->
         <header id="header"
             class="d-flex justify-content-between align-items-center bg-primary-app px-2">
         </header>
 
-        <!-- Nội dung -->
+
+        <!-- ================= NỘI DUNG ================= -->
         <main class="product-page">
 
-            <!-- Hình ảnh sản phẩm -->
+
+            <!-- ================= GALLERY ================= -->
             <section class="product-gallery">
 
-          <div class="main-image">
-    <img id="mainImage"
-         src="../../public/imgs/products/sanpham1/i_1.webp"
-         alt="">
-</div>
+                <!-- Ảnh chính -->
+                <div class="main-image">
 
-              <div class="thumb-list">
-    <img class="thumb active" src="../../public/imgs/products/sanpham1/i_1.webp" alt="">
-    <img class="thumb" src="../../public/imgs/products/sanpham1/i_2.webp" alt="">
-    <img class="thumb" src="../../public/imgs/products/sanpham1/i_3.webp" alt="">
-</div>
+                    <img id="mainImage"
+                        src="../../public/imgs/products/sanpham1/i_1.webp"
+                        alt="Sản phẩm">
+
+                </div>
+
+
+                <!-- Ảnh nhỏ -->
+                <div class="thumb-list">
+
+                    <img class="thumb active"
+                        src="../../public/imgs/products/sanpham1/i_1.webp"
+                        alt="Ảnh sản phẩm 1">
+
+                    <img class="thumb"
+                        src="../../public/imgs/products/sanpham1/i_2.webp"
+                        alt="Ảnh sản phẩm 2">
+
+                    <img class="thumb"
+                        src="../../public/imgs/products/sanpham1/i_3.webp"
+                        alt="Ảnh sản phẩm 3">
+
+                </div>
 
             </section>
 
-            <!-- Thông tin sản phẩm -->
+
+            <!-- ================= THÔNG TIN SẢN PHẨM ================= -->
             <section class="product-info">
 
-                <h1>Mẫu điện thoại A 256GB</h1>
+                <h1>
+                    Mẫu điện thoại A 256GB
+                </h1>
 
+
+                <!-- Đánh giá -->
                 <div class="rating">
                     ⭐ 4.8 · 320 đánh giá
                 </div>
 
+
+                <!-- Giá -->
                 <div class="price">
-                    <span class="new-price">24.990.000đ</span>
-                    <span class="old-price">27.990.000đ</span>
-                    <span class="discount">-11%</span>
+
+                    <span class="new-price">
+                        24.990.000đ
+                    </span>
+
+                    <span class="old-price">
+                        27.990.000đ
+                    </span>
+
+                    <span class="discount">
+                        -11%
+                    </span>
+
                 </div>
 
-                <h3>DUNG LƯỢNG</h3>
+
+                <!-- Dung lượng -->
+                <h3>
+                    DUNG LƯỢNG
+                </h3>
+
 
                 <div class="storage">
-                    <button>256GB</button>
-                    <button>512GB</button>
+
+                    <button>
+                        256GB
+                    </button>
+
+                    <button>
+                        512GB
+                    </button>
+
                 </div>
 
+
+                <!-- Mô tả -->
                 <p>
-                    Màn hình sắc nét, pin dùng cả ngày, camera chụp đêm rõ nét.
-                    Bảo hành chính hãng 12 tháng, hỗ trợ trả góp 0% qua thẻ tín dụng.
+                    Màn hình sắc nét, pin dùng cả ngày,
+                    camera chụp đêm rõ nét.
+                    Bảo hành chính hãng 12 tháng,
+                    hỗ trợ trả góp 0% qua thẻ tín dụng.
                 </p>
 
+
+                <!-- Button -->
                 <div class="buttons">
+
                     <button class="buy-now">
                         Mua ngay
                     </button>
 
-                    <button class="add-cart">
+                    <button class="add-cart"
+                        id="addCart">
                         Thêm giỏ hàng
                     </button>
+
                 </div>
 
             </section>
 
         </main>
 
-         <footer id="footer" class="px-3"></footer>
+
+        <!-- ================= FOOTER ================= -->
+        <footer id="footer"
+            class="px-3">
+        </footer>
 
 
         <!-- ================= BOTTOM MOBILE ================= -->
         <div id="bottom-placeholder"></div>
+
+
+        <!-- ================= TOAST BOOTSTRAP ================= -->
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+            <div id="cartToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true">
+
+                <!-- Header Toast -->
+                <div id="toastHeader"
+                    class="toast-header">
+
+                    <strong class="me-auto"
+                        id="from">
+                        Giỏ Hàng
+                    </strong>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="toast">
+                    </button>
+
+                </div>
+
+
+                <!-- Nội dung Toast -->
+                <div class="toast-body"
+                    id="toastBody">
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -102,18 +206,30 @@
 
     <!-- Header -->
     <script src="../../components/header/loadHeader.js"
-        type="module"></script>
+        type="module">
+    </script>
 
-    <!-- Bottom mobile -->
+
+    <!-- Bottom Mobile -->
     <script src="../../components/bottom_mobile/loadBottomMobile.js"
-        type="module"></script>
+        type="module">
+    </script>
+
 
     <!-- Footer -->
     <script src="../../components/footer/loadFooter.js"
-        type="module"></script>
+        type="module">
+    </script>
 
-    <!-- JS của trang -->
-<script src="./chitiet.js"></script>
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+    <script src="../../lib/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ================= JS CỦA TRANG ================= -->
+    <script src="./chitiet.js">
+    </script>
 
 </body>
 
