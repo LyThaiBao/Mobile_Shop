@@ -4,6 +4,7 @@ import {checkLogin} from "../../utils/checkLogin.js"
 import {saveProductToCart} from "../../utils/cart.js"
 import { clearRenderProduct } from "../../utils/clearRenderProduct.js";
 import {checkEmail} from "../../utils/checkEmail.js"
+import { getLang, loadLang } from "../../utils/lang.js";
 
 function matchRange(product, min, max) {
     return product.variants.some(v => v.newPrice >= min && v.newPrice < max);
@@ -43,6 +44,7 @@ function filter(){
 }
 
 function addToCart(product){
+    const lang = getLang();
     const toast = new bootstrap.Toast(document.getElementById('cartToast'));
     const comFrom = document.getElementById("from");
     const toastHeader = document.getElementById("toastHeader");
@@ -50,14 +52,21 @@ function addToCart(product){
         if(!checkLogin()){
             toastHeader.setAttribute('class','toast-header bg-danger')
             comFrom.innerText = "Thông Báo"
+            comFrom.setAttribute('data-lang','toast.notifyTitle')
             toastBody.innerText = "Vui lòng đăng nhập";
+            toastBody.setAttribute('data-lang','toast.loginRequired');
         }
         else{
             toastHeader.setAttribute('class','toast-header bg-info')
             comFrom.innerText = "Giỏ Hàng"
+            comFrom.setAttribute('data-lang','toast.cartTitle')
             toastBody.innerText = "Đã thêm sản phẩm vào giỏ hàng!";
+            toastBody.setAttribute('data-lang','toast.addSuccess')
             saveProductToCart(product)
         }
+        // trứoc khi gọi show thì mình check lang trước
+        loadLang();
         toast.show();
 }
 filter();
+loadLang();

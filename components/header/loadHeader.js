@@ -1,3 +1,4 @@
+import { loadLang, setLang } from "../../utils/lang.js";
 import {checkLogin} from "../../utils/checkLogin.js"
 async function loadHeader(){
     const placeholderHeader = document.getElementById('header');
@@ -10,6 +11,8 @@ async function loadHeader(){
     openMenu(menu,overlay);
     closeMenu(menu,overlay);
     closeOverlay(menu,overlay)
+    loadLang();
+    chageLang();
 }
 
 function openMenu(menu,overlay){
@@ -43,5 +46,20 @@ function showUsername(){
     const username = document.getElementById("username");
     const usr = checkLogin();
     username.innerText = usr ? usr : "Đăng Nhập"
+}
+
+function chageLang(){
+    const vn = document.getElementById('btn_vn');
+    vn.addEventListener('click',()=>{
+        console.log("VN")
+        setLang('vi');
+    })
+
+    const us = document.getElementById('btn_us');
+    us.addEventListener('click',()=>{
+        console.log("US")
+
+        setLang('us');
+    })
 }
 loadHeader();
