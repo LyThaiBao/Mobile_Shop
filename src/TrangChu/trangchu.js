@@ -13,18 +13,23 @@ function addToCart(product){
     const comeFrom = document.getElementById("from");
     const toastHeader = document.getElementById("toastHeader");
     const toastBody = document.getElementById("toastBody");
-        if(!checkLogin()){
+         if(!checkLogin()){
             toastHeader.setAttribute('class','toast-header bg-danger')
-            comeFrom.innerText = "Thông Báo"
+            comFrom.innerText = "Thông Báo"
+            comFrom.setAttribute('data-lang','toast.notifyTitle')
             toastBody.innerText = "Vui lòng đăng nhập";
+            toastBody.setAttribute('data-lang','toast.loginRequired');
         }
         else{
             toastHeader.setAttribute('class','toast-header bg-info')
-            comeFrom.innerText = "Giỏ Hàng"
+            comFrom.innerText = "Giỏ Hàng"
+            comFrom.setAttribute('data-lang','toast.cartTitle')
             toastBody.innerText = "Đã thêm sản phẩm vào giỏ hàng!";
+            toastBody.setAttribute('data-lang','toast.addSuccess')
             saveProductToCart(product)
         }
-        toast.show();
+        // trứoc khi gọi show thì mình check lang trước
+        loadLang();
 }
 
 

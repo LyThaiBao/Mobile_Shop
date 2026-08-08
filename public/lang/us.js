@@ -70,6 +70,12 @@ export const us = {
         cartTitle: "Cart",
         addSuccess: "Product added to cart!"
     },
+    bottomNav: {
+        home: "Home",
+        category: "Category",
+        cart: "Cart",
+        account: "Account"
+    },
     // Noi dung trang chu
     home:{
          banner: {
